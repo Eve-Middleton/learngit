@@ -1,0 +1,67 @@
+注册登录注销系统
+
+需求分析：
+
+注册：
+1.创建表单接收数据
+2.接受客户端请求参数
+3.insert语句 添加记录到数据库
+4.页面输出添加成功返回注册信息
+
+登录：
+1.创建表单接收数据
+2.接受客户端请求参数
+3.select语句 查找数据库
+4.判断账号密码是否正确
+4.输出登录结果：账号或密码错误或登录成功
+
+注销：
+1.创建表单接受数据
+2.接受客户端请求参数
+3.select查找是否存在该账户
+4.DELETE 语句 删除相关信息
+4.页面输出删除结果成功或者失败
+
+显示层：
+index.jsp 显示<登录 注册 注销>的总界面
+
+logon.jsp 注册页面
+result.jsp 注册返回结果
+
+login.jsp 登陆页面
+get.jsp 返回登录结果
+
+logout.jsp 注销界面
+cancel.jsp 返回注销结果
+
+控制层：
+接受客户端参数
+创建业务层对象调用方法得到结果
+数据共享到返回页面
+
+业务层：调用数据层的方法操作数据库，以及判断
+
+数据层：
+
+domain-> User.java 三个属性（昵称，手机号，密码）
+
+dao.conn->
+1）五个常量
+2）创建数据库链接对象
+DataBaseConnection()
+3）getconn()
+4）close()
+
+dao->
+list<User>userDAO.java   
+insertUser();
+selectUser();
+delect();
+
+dao.impl->
+UserDAOlmpl.java
+list<User>
+insertUser();
+selectUser();
+delect();
+
