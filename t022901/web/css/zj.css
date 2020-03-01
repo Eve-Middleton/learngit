@@ -1,0 +1,35 @@
+body {
+    background-image: url('../image/background1.jpg');
+    background-repeat: no-repeat;/*如何重复背景图像*/
+    background-position: center;
+}
+
+/*标签选择器*/
+#zw {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+
+#sunbox {
+    position: absolute;
+    left: 150px;
+    top: 110px;
+}
+
+/*id选择器*/
+
+.js {
+    position: absolute;
+    left: 850px;
+    top: 400px;
+	border: 1px black solid;
+}
+/*类选择器*/
+
+.button{
+	position: absolute;
+	left: 900px;
+	top: 520px;
+}
+
