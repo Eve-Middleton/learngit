@@ -7,9 +7,9 @@ import static java.lang.Class.*;
 
 public class DataBaseConnection {
 	Connection conn = null;
-	final String DBURL = "jdbc:mysql://175.24.91.121:3306/wechat?useUnicode=true&characterEncoding=utf8";
+	final String DBURL = "jdbc:mysql://xxxxx:3306/wechat?useUnicode=true&characterEncoding=utf8";
 	final String DBUSER = "wechat";
-	final String DBPASSWORD = "Zxc5585101";
+	final String DBPASSWORD = "wechat";
 	final String DBDRIVER = "com.mysql.jdbc.Driver";
 
 	public DataBaseConnection() {
